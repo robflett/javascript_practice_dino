@@ -33,7 +33,7 @@ describe('Park', function () {
       park.addDino(dino3);
       park.addDino(dino4);
       park.removeType('Tyrannosaur');
-      assert.strictEqual(3, park.enclosure.length);
+      assert.strictEqual(2, park.enclosure.length);
   });
 
   it('should return offspring count greater than 2', function (){
@@ -42,7 +42,7 @@ describe('Park', function () {
       park.addDino(dino3);
       park.addDino(dino4);
       park.getOffspring(2);
-      assert.strictEqual(3, park.enclosure.length);
+      assert.strictEqual(park.enclosure.length, 2);
   })
 
 })

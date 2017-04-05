@@ -17,13 +17,13 @@ Park.prototype = {
   },
 
   getOffspring: function (number) {
-    // for( i=this.enclosure.length -1; i>0; i--) {
-    //   if( this.enclosure[i].offspring <= number) this.enclosure.splice(i);
-    // }
+    for( i=this.enclosure.length -1; i>0; i--) {
+      if( this.enclosure[i].offspring <= number) this.enclosure.splice(i);
+    }
 
-    var result = this.enclosure.filter(function( item ) {
-      return item.this.offspring == number;
-    });
+    // var result = this.enclosure.filter(function( item ) {
+    //   return item.this.offspring == number;
+    // });
   }
 }
 
